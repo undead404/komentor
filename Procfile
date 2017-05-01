@@ -1,1 +1,1 @@
-web: gunicorn komentor.komentor.wsgi
+web: gunicorn komentor.wsgi
