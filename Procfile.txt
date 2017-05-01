@@ -1,1 +1,1 @@
-web: gunicorn komentor.wsgir --log-file -
+web: gunicorn komentor.wsgi
