@@ -25,7 +25,7 @@ SECRET_KEY = '0)u+vwf)&kr+izg+jg)0t^gnb+e320h#z%oj=+548#6*2!--s5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['komentor.herokuapp.com']
 
 
 # Application definition
