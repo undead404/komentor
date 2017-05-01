@@ -77,9 +77,11 @@ WSGI_APPLICATION = 'komentor.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'komentor',
-        'USER': 'komentor',
-        'HOST': 'localhost'
+        'NAME': 'd5tumajda8rak3',
+        'USER': 'pbgvzinfgkfjgi',
+	'PORT': 5432,
+	'PASSWORD': '166cadb9e4be2358468252df6db1c9cb288cc816a9a65e11ad16e2c3e9ae72e9',
+        'HOST': 'ec2-46-137-97-169.eu-west-1.compute.amazonaws.com'
     }
 }
 
