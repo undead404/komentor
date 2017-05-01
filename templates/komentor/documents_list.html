@@ -1,0 +1,23 @@
+{% extends 'komentor/base.html' %}
+
+{% block content %}
+    <div class="row">
+        <h3><a href="{% url 'document_creation' %}">Create a document</a></h3>
+    </div>
+    <table class="table table-hover">
+        <tr class="info row">
+            <th class="col-xs-4 text-center">Title</th>
+            <th class="col-xs-4 text-center">URL</th>
+            <th class="col-xs-4 text-center">Date of last activity</th>
+        </tr>
+        {% for document in documents %}
+            <tr class="row">
+                <td class="col-xs-4"><a href="{% url 'document' document.url %}">{{document.title}}</a></td>
+                <td class="col-xs-4">{{document.url|truncatechars:50}}</td>
+                <td class="col-xs-4">{{document.get_date_active|default:'Never'}}</td>
+            </tr>
+        {% empty %}
+            <div class="row">No documents were commented yet!</div>
+        {% endfor %}
+    </table>
+{% endblock %}
