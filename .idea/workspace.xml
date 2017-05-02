@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af72ec84-f6c0-4bb4-8fb9-fda3126d76e3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/komentor/static/css/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/komentor/static/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/komentor/static/css/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/komentor/static/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/komentor/static/css/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/komentor/static/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/komentor/static/css/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/komentor/static/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/komentor/static/css/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/komentor/static/fonts/glyphicons-halflings-regular.woff2" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/komentor/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="215">
-              <caret line="107" column="22" lean-forward="true" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+              <caret line="107" column="22" lean-forward="false" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -38,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -47,8 +51,8 @@
       <file leaf-file-name="journal.bootstrap.min.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/komentor/static/css/journal.bootstrap.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="3119" lean-forward="false" selection-start-line="10" selection-start-column="3117" selection-end-line="10" selection-end-column="3119" />
+            <state relative-caret-position="319">
+              <caret line="10" column="4011" lean-forward="true" selection-start-line="10" selection-start-column="4011" selection-end-line="10" selection-end-column="4011" />
               <folding />
             </state>
           </provider>
@@ -189,6 +193,11 @@
       </pane>
       <pane id="Scratches" />
     </panes>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\undead404\PycharmProjects\komentor\komentor\static" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -394,7 +403,7 @@
     <entry file="file://$PROJECT_DIR$/komentor/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
-          <caret line="107" column="22" lean-forward="true" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+          <caret line="107" column="22" lean-forward="false" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -402,15 +411,15 @@
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/komentor/static/css/journal.bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="3119" lean-forward="false" selection-start-line="10" selection-start-column="3117" selection-end-line="10" selection-end-column="3119" />
+        <state relative-caret-position="319">
+          <caret line="10" column="4011" lean-forward="true" selection-start-line="10" selection-start-column="4011" selection-end-line="10" selection-end-column="4011" />
           <folding />
         </state>
       </provider>
