@@ -14,7 +14,7 @@
     {% endfor %}
 </div></div>
 <div class="row"><div class="col-xs-4"
-    <form action="{% url 'create_comment' document.url %}" method="post">
+    <form action="{% url 'create_comment'%}{{document.url}}" method="post">
         {% csrf_token %}
         <div class="form-group">
             <label for="author">Your name</label>
