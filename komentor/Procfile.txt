@@ -1,1 +1,0 @@
-web: gunicorn komentor.wsgir --log-file -
