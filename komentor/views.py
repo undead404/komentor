@@ -1,7 +1,5 @@
 from django.shortcuts import redirect, render
-from django.utils import timezone
 from .models import Comment, Document
-from operator import methodcaller
 
 
 def create_comment(request, url):
