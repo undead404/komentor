@@ -23,9 +23,11 @@ def create_document(request):
 
 @xframe_options_exempt
 def document(request, url):
-    document = Document.objects.get(url=url)
-    comments = Comment.objects.filter(place=document).order_by('date_published')
-    return render(request, 'komentor/document.html', {'comments': comments, 'document': document})
+    document, is_new = Document.objects.get_or_create(url=url)
+    if is_new:
+        document.save()
+    # comments = Comment.objects.filter(place=document).order_by('date_published')
+    return render(request, 'komentor/document.html', {'comments': document.comments, 'document': document})
 
 
 def documents_list(request):
