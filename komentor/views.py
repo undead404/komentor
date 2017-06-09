@@ -1,5 +1,6 @@
 from django.shortcuts import redirect, render
 from .models import Comment, Document, Commenter
+from django.views.decorators.clickjacking import xframe_options_exempt
 
 
 def create_comment(request, url):
@@ -20,6 +21,7 @@ def create_document(request):
     else:
         return redirect('document_creation')
 
+@xframe_options_exempt
 def document(request, url):
     document = Document.objects.get(url=url)
     comments = Comment.objects.filter(place=document).order_by('date_published')
