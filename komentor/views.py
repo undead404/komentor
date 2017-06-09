@@ -27,7 +27,7 @@ def document(request, url):
     if is_new:
         document.save()
     # comments = Comment.objects.filter(place=document).order_by('date_published')
-    return render(request, 'komentor/document.html', {'comments': document.comments, 'document': document})
+    return render(request, 'komentor/document.html', {'comments': document.comments.all(), 'document': document})
 
 
 def documents_list(request):
