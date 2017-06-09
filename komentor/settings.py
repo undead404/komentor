@@ -132,3 +132,4 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # import dj_database_url
 # DATABASES['default'] = dj_database_url.config()
 CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = False
