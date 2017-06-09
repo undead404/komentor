@@ -1,17 +1,20 @@
 from django.shortcuts import redirect, render
-from .models import Comment, Document
+from .models import Comment, Document, Commenter
 
 
 def create_comment(request, url):
     document = Document.objects.get(url=url)
-    comment = Comment(place=document, author=request.POST['author'], text=request.POST['text'])
+    commenter, is_new = Commenter.objects.get_or_create(name=request.POST['author'])
+    if is_new:
+        commenter.save()
+    comment = Comment(place=document, author=commenter, text=request.POST['text'])
     comment.save()
     return redirect('document', url)
 
 
 def create_document(request):
     if request.POST['title'] and request.POST['url']:
-        document = Document(title=request.POST['title'], url=Document.clean_url(request.POST['url']))
+        document = Document.objects.create_document(title=request.POST['title'], url=request.POST['url'])
         document.save()
         return redirect('documents_list')
     else:

@@ -13,8 +13,8 @@
         </div>
     {% endfor %}
 </div></div>
-<div class="row"><div class="col-xs-4"
-    <form action="{% url 'create_comment'%}{{document.url}}" method="post">
+<div class="row"><div class="col-xs-4">
+    <form action="{% url 'create_comment' document.url%}" method="post">
         {% csrf_token %}
         <div class="form-group">
             <label for="author">Your name</label>
@@ -24,7 +24,7 @@
             <label for="text">Your comment</label>
             <textarea class='form-control' rows=4 name="text" id="text" required="required"></textarea>
         </div>
-        <input class="btn btn-primary" type="submit" value="Send" />
+        <input class="btn btn-primary" type="submit" value="Send" /></div>
     </form>
 </div></div>
 {% endblock %}

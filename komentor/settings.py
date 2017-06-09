@@ -25,7 +25,7 @@ SECRET_KEY = '0)u+vwf)&kr+izg+jg)0t^gnb+e320h#z%oj=+548#6*2!--s5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['komentor.herokuapp.com']
+ALLOWED_HOSTS = ['komentor.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -38,9 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'komentor',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -79,8 +81,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'd5tumajda8rak3',
         'USER': 'pbgvzinfgkfjgi',
-	'PORT': 5432,
-	'PASSWORD': '166cadb9e4be2358468252df6db1c9cb288cc816a9a65e11ad16e2c3e9ae72e9',
+	       'PORT': 5432,
+	       'PASSWORD': '166cadb9e4be2358468252df6db1c9cb288cc816a9a65e11ad16e2c3e9ae72e9',
         'HOST': 'ec2-46-137-97-169.eu-west-1.compute.amazonaws.com'
     }
 }
@@ -127,5 +129,6 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+# import dj_database_url
+# DATABASES['default'] = dj_database_url.config()
+CORS_ORIGIN_ALLOW_ALL = True
