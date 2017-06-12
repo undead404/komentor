@@ -15,14 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from .views import create_comment, create_document, document, document_creation, documents_list
+from .views import create_comment, create_document, new_document, show_document, show_documents
 
 urlpatterns = [
-    url(r'^$', documents_list),
+    url(r'^$', show_documents),
     url(r'^admin/', admin.site.urls),
     url(r'^create-comment/(.*)', create_comment, name="create_comment"),
     url(r'^create-document/', create_document, name='create_document'),
-    url(r'^document/(.*)', document, name='document'),
-    url(r'^document-creation/', document_creation, name="document_creation"),
-    url(r'^documents/', documents_list, name='documents_list'),
+    url(r'^document/(.*)', show_document, name='document'),
+    url(r'^document-creation/', new_document, name="document_creation"),
+    url(r'^documents/', show_documents, name='documents_list'),
 ]

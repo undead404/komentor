@@ -22,7 +22,7 @@ def create_document(request):
         return redirect('document_creation')
 
 @xframe_options_exempt
-def document(request, url):
+def show_document(request, url):
     document, is_new = Document.objects.get_or_create(url=url)
     if is_new:
         document.save()
@@ -30,11 +30,11 @@ def document(request, url):
     return render(request, 'komentor/document.html', {'comments': document.comments.all(), 'document': document})
 
 
-def documents_list(request):
+def show_documents(request):
     documents = sorted(Document.objects.all(),
                        key=lambda document: -document.get_date_active().timestamp() if document.get_date_active() else 0)
     return render(request, 'komentor/documents_list.html', {'documents': documents})
 
 
-def document_creation(request, **kwargs):
+def new_document(request, **kwargs):
     return render(request, 'komentor/document_creation.html', kwargs)
